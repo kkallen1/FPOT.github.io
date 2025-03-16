@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>隊伍詳情 - 找團隊</title>
+    <link rel="stylesheet" href="team.css">         <!-- 隊伍詳情頁專屬樣式 -->
+    <link rel="stylesheet" href="/styles/nav.css">  <!-- 共用導覽列樣式 -->
+    <link rel="stylesheet" href="/scrollbar/hide-scrollbar.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">找團隊</div>
+            <ul>
+                <li><a href="/index.html">首頁</a></li>
+                <li><a href="#">創建隊伍</a></li>
+                <li><a href="/login/login.html">我的帳戶</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="team-detail" id="teamDetail">
+            <!-- 隊伍標題區 -->
+            <div class="team-header">
+                <h1 id="teamName"></h1>
+                <button class="apply-btn" onclick="alert('已申請加入此隊伍！')">申請加入</button>
+            </div>
+
+            <!-- 隊伍簡介 -->
+            <div class="team-section">
+                <h2>隊伍簡介</h2>
+                <p id="teamDesc"></p>
+            </div>
+
+            <!-- 招募條件 -->
+            <div class="team-section">
+                <h2>招募條件</h2>
+                <p id="teamRequirements"></p>
+            </div>
+
+            <!-- 標籤 -->
+            <div class="team-section">
+                <h2>相關標籤</h2>
+                <p id="teamTags"></p>
+            </div>
+
+            <!-- 額外資訊（模擬1111風格） -->
+            <div class="team-section">
+                <h2>聯絡我們</h2>
+                <p>有興趣請點擊「申請加入」按鈕，或聯繫隊長：<span id="teamContact">example@email.com</span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 找團隊 - 學生專案平台</p>
+    </footer>
+
+    <script src="team.js"></script>  <!-- 隊伍詳情頁 JavaScript -->
+    <script src="/scrollbar/scrollbar.js"></script>
+</body>
+</html>

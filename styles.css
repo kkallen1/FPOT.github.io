@@ -1,0 +1,103 @@
+/* 基本樣式重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* 主內容 */
+.hero {
+    text-align: center;
+    padding: 4rem 1rem;
+    background-color: #f4f4f4;
+    margin-top: 60px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero input {
+    padding: 0.5rem;
+    width: 300px;
+    font-size: 1rem;
+}
+
+.hero button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: #0056b3;
+}
+
+/* 隊伍列表 */
+.team-list {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    min-height: calc(100vh - 300px);
+}
+
+.team-list h2 {
+    margin-bottom: 1rem;
+}
+
+.team-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.team-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.team-card p {
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.team-card .tags {
+    color: #bd8400;
+    font-size: 0.8rem;
+}
+
+.team-card button {
+    padding: 0.5rem 1rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.team-card button:hover {
+    background-color: #218838;
+}
+
+.team-link {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.team-link:hover {
+    text-decoration: underline;
+}

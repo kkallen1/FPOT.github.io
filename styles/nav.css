@@ -1,0 +1,63 @@
+/* 整體布局 */
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+/* 導覽列 */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    position: fixed; /* 固定在頂部 */
+    top: 0; /* 確保貼齊頂部 */
+    width: 100%; /* 滿版寬度 */
+    z-index: 1000; /* 避免被其他元素蓋住 */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+}
+
+/* 頁腳 */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    flex-shrink: 0;
+    width: 100%;
+}

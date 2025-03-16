@@ -1,0 +1,13 @@
+/* 隱藏滾動條但保留滾動功能 */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* 限制高度為視窗高度 */
+    scrollbar-width: none; /* Firefox: 隱藏滾動條 */
+    -ms-overflow-style: none; /* IE/Edge: 隱藏滾動條 */
+}
+
+/* Chrome, Safari, 和其他 Webkit 瀏覽器: 隱藏滾動條 */
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+    display: none;
+}
