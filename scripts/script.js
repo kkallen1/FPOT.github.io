@@ -50,7 +50,7 @@ function displayTeams(teamArray) {
         teamCard.className = "team-card";
         teamCard.innerHTML = `
             <div>
-                <h3><a href="team/team.html?name=${encodeURIComponent(team.name)}" class="team-link">${team.name}</a></h3>
+                <h3><a href="../team/team.html?name=${encodeURIComponent(team.name)}" class="team-link">${team.name}</a></h3>
                 <p>${team.desc}</p></br>
                 <p class="tags">tags: ${team.tags.join(", ")}</p> <!-- 顯示標籤 -->
             </div>
